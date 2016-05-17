@@ -1,0 +1,25 @@
+﻿.ui-table tr {
+    border: 0px solid rgb(51,51,51);
+}
+.ui-table-reflow.ui-responsive td, .ui-table-reflow.ui-responsive th {
+    border: 2px solid rgb(51,51,51);
+    border-left:4px solid rgb(51,51,51);
+    border-right:4px solid rgb(51,51,51);
+}
+.ui-table-reflow.ui-responsive td:first-child, .ui-table-reflow.ui-responsive th:first-child {
+    border-top:4px solid rgb(51,51,51);
+}
+.ui-table-reflow.ui-responsive td:last-child, .ui-table-reflow.ui-responsive th:last-child {
+    border-bottom:4px solid rgb(51,51,51);
+}
+
+
+@media ( min-width: 35em ) {
+    .ui-table tr {
+        border: 4px solid rgb(51,51,51);
+    }
+
+    .ui-table-reflow.ui-responsive td, .ui-table-reflow.ui-responsive th {
+         border: 0;
+    }
+}

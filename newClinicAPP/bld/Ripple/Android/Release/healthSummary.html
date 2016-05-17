@@ -1,0 +1,26 @@
+﻿<ul data-role="listview" class="ui-listview-outer" data-inset="false">
+        <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" data-collapsed="false">
+            <h2>健保收入條件設定</h2>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <h3>
+                    <a href="#" id="healthSummary_start">開始日</a>
+                    <a href="#" data-role="button" id="healthSummary_start_preDay" data-icon="arrow-l" data-inline="true" data-mini="true">前一日</a>
+                    <a href="#" data-role="button" id="healthSummary_start_nextDay" data-icon="arrow-r" data-inline="true" data-mini="true" data-iconpos="right">後一日</a>
+                    <input type="date" id="healthSummary_startDate" /><br />
+                    <a href="#" id="healthSummary_end">結束日</a>
+                    <a href="#" data-role="button" id="healthSummary_end_preDay" data-icon="arrow-l" data-inline="true" data-mini="true">前一日</a>
+                    <a href="#" data-role="button" id="healthSummary_end_nextDay" data-icon="arrow-r" data-inline="true" data-mini="true" data-iconpos="right">後一日</a>
+                    <input type="date" id="healthSummary_endDate" />
+                </h3>
+            </fieldset>
+            <fieldset data-role="controlgroup">
+                <label for="healthSummary_doctor" class="select">醫師</label>
+                <select name="select-choice-1" id="healthSummary_doctor">
+                    <option value="all">全部醫師</option>
+                </select>
+            </fieldset>
+            <a href="#" id="healthSummary_search" data-role="button">查詢</a>
+        </li>
+    </ul>
+<input type="hidden" id="healthSummaryPage_ClinicId" />
+<div data-role="main" class="ui-content" id="healthSummaryPage_searchResult" />
